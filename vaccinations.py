@@ -4,7 +4,6 @@ import pandas as pd
 import altair as alt
 
 
-@st.cache
 def get_vaccination_data():
     DATA_URL = "https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/vaccinations.csv"
     df = pd.read_csv(DATA_URL)
